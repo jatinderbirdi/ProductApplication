@@ -28,10 +28,10 @@ namespace App2
             addProduct = (Button)FindViewById(Resource.Id.add);
             etprice = (EditText)FindViewById(Resource.Id.value);
             spinnerOfProduct = (Spinner)FindViewById(Resource.Id.spinnerOfProducts);
-            var carAdapter = ArrayAdapter.CreateFromResource(this, Resource.Array.product_array, Android.Resource.Layout.SimpleSpinnerItem);
+            var productAdapter = ArrayAdapter.CreateFromResource(this, Resource.Array.product_array, Android.Resource.Layout.SimpleSpinnerItem);
 
             //Creating the adapter for spinner
-            spinnerOfProduct.Adapter = carAdapter;
+            spinnerOfProduct.Adapter = productAdapter;
             spinnerOfProduct.ItemSelected += delegate
             {
                 string msg = "The product which is selected is " + spinnerOfProduct.SelectedItem.ToString();
