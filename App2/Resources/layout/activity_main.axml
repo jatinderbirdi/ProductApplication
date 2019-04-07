@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:columnCount ="2"
+		android:id="@+id/gridLayout1">
+		<TextView
+			android:text="Customer Name"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView1" />
+		<EditText
+			android:id="@+id/editText1"
+			android:width="400px"
+			android:layout_marginLeft="20.0dp" />
+		<TextView
+			android:text="Product Name"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView2" />
+		<Spinner
+			android:id="@+id/spinnerOfProducts"
+			android:layout_width="400px"
+			android:layout_marginLeft="16.5dp" />
+		<TextView
+			android:text="Product Price"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView3" />
+		<EditText
+			android:id="@+id/value"
+			android:width="400px"
+			android:layout_marginLeft="15.0dp" />
+		<Button
+			android:text="Add"
+			android:id="@+id/add" />
+		<TextView
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView4" />
+		<TextView
+			android:text="Total"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView5" />
+		<TextView
+			android:text="450"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/total" />
+		<Button
+			android:text="Place Order"
+			android:id="@+id/button2" />
+	</GridLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
